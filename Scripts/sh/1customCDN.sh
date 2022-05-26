@@ -156,7 +156,7 @@ fi
 
 # 获取有效 code.sh 链接
 get_valid_code() {
-    code_list=(https://raw.githubusercontents.com/shufflewzc/VIP/main/Scripts/sh/Helpcode2.8/code.sh https://raw.sevencdn.com/shufflewzc/VIP/main/Scripts/sh/Helpcode2.8/code.sh https://git.metauniverse-cn.com/https://raw.githubusercontents.com/shufflewzc/VIP/main/Scripts/sh/Helpcode2.8/code.sh)
+    code_list=(https://raw.githubusercontent.com/yanyuwangluo/VIP/main/Scripts/sh/Helpcode2.8/code.sh https://raw.sevencdn.com/yanyuwangluo/VIP/main/Scripts/sh/Helpcode2.8/code.sh)
     for url in ${code_list[@]}; do
         check_url $url
         if [ $? = 0 ]; then
@@ -222,7 +222,7 @@ fi
 
 # 获取有效 task_before.sh 链接
 get_valid_task_before() {
-    task_before_list=(https://raw.githubusercontents.com/shufflewzc/VIP/main/Scripts/sh/Helpcode2.8/task_before.sh https://raw.sevencdn.com/shufflewzc/VIP/main/Scripts/sh/Helpcode2.8/task_before.sh https://git.metauniverse-cn.com/https://raw.githubusercontents.com/shufflewzc/VIP/main/Scripts/sh/Helpcode2.8/task_before.sh)
+    task_before_list=(https://raw.githubusercontents.com/yanyuwangluo/VIP/main/Scripts/sh/Helpcode2.8/task_before.sh https://raw.sevencdn.com/yanyuwangluo/VIP/main/Scripts/sh/Helpcode2.8/task_before.sh https://git.metauniverse-cn.com/https://raw.githubusercontents.com/yanyuwangluo/VIP/main/Scripts/sh/Helpcode2.8/task_before.sh)
     for url in ${task_before_list[@]}; do
         check_url $url
         if [ $? = 0 ]; then
