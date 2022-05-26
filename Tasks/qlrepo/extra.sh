@@ -20,13 +20,13 @@
 
 #------ 设置区 ------#
 ## 1. 拉取仓库编号设置，默认 Faker2 仓库
-CollectedRepo=(4) ##示例：CollectedRepo=(2 4 6)
+CollectedRepo=() ##示例：CollectedRepo=(2 4 6)
 OtherRepo=() ##示例：OtherRepo=(1 3)
 ## 2. 是否安装依赖和安装依赖包的名称设置
 dependencies="no" ##yes为安装，no为不安装
 package_name="canvas png-js date-fns axios crypto-js ts-md5 tslib @types/node dotenv typescript fs require tslib"
 ## 3. Ninja 是否需要启动和更新设置
-Ninja="on" ##up为更新，on为启动，down为不运行
+Ninja="down" ##up为更新，on为启动，down为不运行
 
 
 #------ 编号区 ------#
@@ -34,9 +34,9 @@ Ninja="on" ##up为更新，on为启动，down为不运行
 一、集成仓库（Collected Repositories)
 2-JDHelloWorld
 3-he1pu
-4-Faker
-6-Aaron-lv
-7-yuannian1112
+4-Faker2
+5-Faker3
+6-yuannian1112
 二、其他仓库（Other Repositories）
 1-passerby-b
 2-curtinlv
@@ -63,12 +63,12 @@ CR3(){
     ql repo https://github.com/he1pu/JDHelp.git "jd_|jx_|getJDCookie" "Coupon|update" "^jd[^_]|USER|^sign|^ZooFaker|utils"
 }
 CR4(){
-    ql repo https://github.com/shufflewzc/faker2.git "jd_|jx_|gua_|jddj_|getJDCookie" "activity|backUp|Coupon|update" "^jd[^_]|USER|utils|^JS|^TS|^JDJRValidator_|^ZooFaker|^sign|ql|sentNotify|JDSignValidator|magic" "main"
+   ql repo https://github.com/shufflewzc/faker2.git "jd_|jx_|gua_|jddj_|jdCookie" "activity|backUp" "^jd[^_]|USER|function|utils|sendNotify|ZooFaker_Necklace.js|JDJRValidator_|sign_graphics_validate|ql|JDSignValidator|magic" "main"
+}
+CR5(){
+    ql repo https://github.com/shufflewzc/faker3.git "jd_|jx_|gua_|jddj_|jdCookie" "activity|backUp" "^jd[^_]|USER|function|utils|sendNotify|ZooFaker_Necklace.js|JDJRValidator_|sign_graphics_validate|ql|JDSignValidator|magic" "main"
 }
 CR6(){
-    ql repo https://github.com/Aaron-lv/sync.git "jd_|jx_|getJDCookie" "activity|backUp|Coupon" "^jd[^_]|USER|utils" "jd_scripts"
-}
-CR7(){
     ql repo https://github.com/yuannian1112/jd_scripts.git "jd_|jx_|getJDCookie" "activity|backUp" "^jd[^_]|USER|utils"
 }
 for i in ${CollectedRepo[@]}; do

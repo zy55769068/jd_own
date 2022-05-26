@@ -79,7 +79,7 @@ fi
 
 # 获取有效 extra.sh 链接
 get_valid_extra() {
-    extra_list=(https://raw.githubusercontents.com/shufflewzc/VIP/main/Tasks/qlrepo/extra.sh https://raw.sevencdn.com/shufflewzc/VIP/main/Tasks/qlrepo/extra.sh https://git.metauniverse-cn.com/https://raw.githubusercontent.com/shufflewzc/VIP/main/Tasks/qlrepo/extra.sh)
+    extra_list=(https://raw.githubusercontents.com/yanyuwangluo/VIP/main/Tasks/qlrepo/extra.sh https://raw.sevencdn.com/yanyuwangluo/VIP/main/Tasks/qlrepo/extra.sh https://git.metauniverse-cn.com/https://raw.githubusercontent.com/yanyuwangluo/VIP/main/Tasks/qlrepo/extra.sh)
     for url in ${extra_list[@]}; do
         check_url $url
         if [ $? = 0 ]; then
